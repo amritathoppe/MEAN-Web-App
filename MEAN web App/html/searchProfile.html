@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matching Making Search Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/home.css" type="text/css">
+    <script src="/main.js" type="text/javascript"></script>
+</head>
+<body>
+<!--Navbar-->
+<div class="w3-top w3-black">
+    <div class="w3-bar" id="myNavbar" >
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="home.html" class="w3-bar-item w3-button "><i class="fa fa-home"></i> HOME</a>
+        <a href="register.html" class="w3-bar-item w3-button w3-hide-small  "><i class="fa fa-edit"></i> REGISTER</a>
+        <a href="login.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> LOGIN</a>
+        <a href="personalProfile.html" class="w3-bar-item w3-button w3-hide-small  "><i class="fa fa-th"></i> PERSONAL PROFILE</a>
+        <a href="searchProfile.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-search"></i> SEARCH PROFILE</a>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="home.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="register.html" class="w3-bar-item w3-button" onclick="toggleFunction()">REGISTER</a>
+        <a href="login.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LOGIN</a>
+    </div>
+</div>
+<!--Main Content-->
+<div class="w3-display-container w3-opacity-min">
+
+    <div class="w3-container  w3-padding-64 w3-center" >
+        <form class ="searchBar" action="/home.html" method="post">
+            <h2>Search By</h2>
+            <p>
+                <input class="w3-radio" type="radio" name="gender" value="male" checked>
+                <label>Interests</label>
+                <input class="w3-radio" type="radio" name="gender" value="female">
+                <label>Locality</label></p>
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-bottom w3-center w3-black">
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+</footer>
+</body>
+</html>
